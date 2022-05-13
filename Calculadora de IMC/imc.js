@@ -3,12 +3,12 @@ const calcular = document.getElementById('calcular');
 
 
 function imc () {
-    const Nome = document.getElementById('nome').value;
+    const nome = document.getElementById('nome').value;
     const altura = document.getElementById('altura').value;
-    const pesso = document.getElementById('peso').value;
+    const peso = document.getElementById('peso').value;
     const resultado = document.getElementById('resultado');
 
-    if (nome !== '' && altura !== '' && pesso !== ''){
+    if (nome !== '' && altura !== '' && peso !== ''){
 
         const valorIMC = (peso / (altura * altura)).toFixed(1);
 
@@ -27,7 +27,7 @@ function imc () {
         }else if (valorIMC < 25){
             classificacao = 'Com obesidade grau III. Cuidado!'
         }
-            resultado.textContent = '${soma} seu IMC é ${valorIMC} e você está ${classificacao}';
+            resultado.textContent = `${soma} seu IMC é ${valorIMC} e você está ${classificacao}`;
     
         }else {
             resultado.textContent = 'Preencha todos os campos!!!!';
