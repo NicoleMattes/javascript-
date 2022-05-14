@@ -27,7 +27,7 @@ function imc () {
         }else if (valorIMC < 25){
             classificacao = 'Com obesidade grau III. Cuidado!'
         }
-            resultado.textContent = `${soma} seu IMC é ${valorIMC} e você está ${classificacao}`;
+            resultado.textContent = `${nome} seu IMC é ${valorIMC} e você está ${classificacao}`;
     
         }else {
             resultado.textContent = 'Preencha todos os campos!!!!';
