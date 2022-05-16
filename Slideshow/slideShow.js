@@ -11,7 +11,7 @@ const imagens = [
     { 'id': '8', 'url': './img/neon.jpg' },
 ]
 
-const container = document.querySelector ('#container-items')
+const container = document.querySelector ('#container-items');
 
 
 const loadImages = ( images, container) => {
@@ -26,7 +26,20 @@ const loadImages = ( images, container) => {
 }
 
 
-
-loadImages( images, container );
+loadImages(imagens, container);
 
 let items = document.querySelectorAll('.item');
+
+const previous = () => {
+    containerItems.appendChild(items[0]);
+    items = document.querySelectorAll('.item'); 
+}
+
+const next = () => {
+    const lastItem = items[items.length - 1];
+    containerItems.insertBefore( lastItem, items[0] );
+    items = document.querySelectorAll('.item');
+}
+
+document.querySelector('#previous').addEventListener('click', previous);
+document.querySelector('#next').addEventListener('click', next);
