@@ -31,13 +31,13 @@ loadImages(imagens, container);
 let items = document.querySelectorAll('.item');
 
 const previous = () => {
-    containerItems.appendChild(items[0]);
+    container.appendChild(items[0]);
     items = document.querySelectorAll('.item'); 
 }
 
 const next = () => {
     const lastItem = items[items.length - 1];
-    containerItems.insertBefore( lastItem, items[0] );
+    container.insertBefore( lastItem, items[0] );
     items = document.querySelectorAll('.item');
 }
 
