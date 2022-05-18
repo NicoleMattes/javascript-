@@ -5,9 +5,9 @@ const imagens = [
     { 'id': '2', 'url': './img/sky.jpg' },
     { 'id': '3', 'url': './img/jett.jpg' },
     { 'id': '4', 'url': './img/killjoy.png' },
-    { 'id': '5', 'url': './img/fade.jpg' },
+    { 'id': '5', 'url': './img/fade.jpeg' },
     { 'id': '6', 'url': './img/viper.jpg' },
-    { 'id': '7', 'url': './img/reyna.jpg' },
+    { 'id': '7', 'url': './img/reyna.jpeg' },
     { 'id': '8', 'url': './img/neon.jpg' },
 ]
 
