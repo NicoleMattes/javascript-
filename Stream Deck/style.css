@@ -42,11 +42,15 @@ main{
     gap: 15px;
 }
 
-#alerta{
-    height: 150px;
-    width: 150px;
+.linha{
     display: flex;
     align-items: center;
+}
 
-    background-color: rgb(255, 0, 0);
+.Button{
+    height: 250px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(2, 0, 97);
 }
