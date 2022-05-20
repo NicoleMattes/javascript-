@@ -55,6 +55,7 @@ function calculadora() {
                 alert(`${n1} elevado à ${n2}ª potência é ${resultado}`);
                 novaOperacao();
             }
+            
             // nova operação
             function novaOperacao() {
                 let opcao = prompt('Deseja fazer outra operação?\n 1 - Sim\n 2 - Não');
