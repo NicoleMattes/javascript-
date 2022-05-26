@@ -16,6 +16,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
 }
 
@@ -32,7 +33,7 @@ main{
 }
 
 .container{
-    background-color: white;
+    background-color: rgb(219, 48, 48);
     width: 70vw;
     margin: 0 auto;
     display: flex;
@@ -52,8 +53,9 @@ main{
 .botao{
     display: flex;
     align-items: center;
-    background-color:black;
+    background-color:rgb(52, 0, 136);
     right: 150px;
     height: 150px;
     flex-direction: column;
+        
 }
