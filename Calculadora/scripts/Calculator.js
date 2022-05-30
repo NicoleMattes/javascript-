@@ -1,1 +1,2 @@
-let Calculator = new CalcContoller
+window.Calculator = new CalcContoller(); 
+

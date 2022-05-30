@@ -1,6 +1,9 @@
 class CalcContoller {
 
     constructor(){
+        this._displayCalcEl = document.querySelector("#display");
+        this._dateEl = document.querySelector("#data");
+        this._timeEl = document.querySelector("#hora");
         this._displayCalc = "0";
         this._currentDate;
         this.initialize();
@@ -9,13 +12,9 @@ class CalcContoller {
 
 initialize(){
 
-    let displayCalcEl = document.querySelector("#display");
-    let dateEl = document.querySelector("#data");
-    let timeEl = document.querySelector("#hora");
-
-    displayCalcEl.innerHTML = "44";
-    dateEl.innerHTML = "12/12/12";
-    timeEl.innerHTML = "00:00";
+    this._displayCalcEl.innerHTML = this._displayCalc;
+    this._dateEl.innerHTML = "12/12/12";
+    this._timeEl.innerHTML = "00:00";
 
 }
 
@@ -24,10 +23,12 @@ initialize(){
 // como a propriedade displayCalc é privada ela precisa do get para ser acesssada 
 
     get displayCalc(){
-        return this._displayCalc;
+        console.log(this._displayCalc)
+        return this._displayCalc.innerHTML;
 }
 
     set displayCalc(valor){
+        console.log(valor)
         this._displayCalc = valor;
 }
 
